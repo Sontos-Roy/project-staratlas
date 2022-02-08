@@ -1,0 +1,265 @@
+/* stake main content start  */
+.stake-title{
+    width: 100%;
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2F5D8C;
+    margin-bottom: 48px;
+}
+.stake-main .stake-a{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.stake-main .stake-a .stake-ab{
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #D55E2D;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px 0px;
+    margin-bottom: 20px;
+}
+.stake-main .stake-a .stake-ab .stake-switch-main{
+    width: 260px;
+    height: 90px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(124, 124, 124, 0.1);
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+.stake-main .stake-a .stake-ab .stake-switch-main .stake-switch-stake, .stake-main .stake-a .stake-ab .stake-switch-main .stake-switch-unstake{
+    width: 120px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1;
+}
+.stake-main .stake-a .stake-ab .stake-switch-main .stake-switch-stake img, .stake-main .stake-a .stake-ab .stake-switch-main .stake-switch-unstake img{
+    height: 25px;
+    margin-bottom: 6px;
+}
+.stake-switch-main .stake-switch-indicator{
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(255, 139, 0), rgb(255, 218, 0));
+    transition: all 0.3s ease 0s;
+}
+.stake-switch-main .stake-switch-indicator.movebox-1, .stake-switch-main .stake-switch-indicator.movebox-2{
+    position: absolute;
+}
+.stake-switch-main .stake-switch-indicator.movebox-1{
+    left: 10px;
+    animation: movebox1 0.2s linear;
+}
+.stake-switch-main .stake-switch-indicator.movebox-2{
+    display: none;
+    animation: movebox2 0.2s linear;
+}
+@keyframes movebox1 {
+    0%{
+        left: 130px;
+    }100%{
+        left: 10px;
+    }
+}
+@keyframes movebox2 {
+    0%{
+        left: 10px;
+    }100%{
+        left: 130px;
+    }
+}
+.stake-amount{
+    --swiper-theme-color: #007aff;
+    font-family: Arial!important;
+    outline: none;
+    width: 100%;
+    max-width: 410px;
+    height: 65px;
+    margin: 30px 0px 0px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(124, 124, 124, 0.1);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.stake-amount img{
+    height: 25px;
+}
+.stake-amount .stake-amount-inp{
+    --swiper-theme-color: #007aff;
+    outline: none;
+    flex: 1 1;
+    padding: 16px 15px;
+    background: transparent;
+    border: 0 solid transparent;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #feffff;
+}
+.stake-amount input[type=number], .stake-amount input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .stake-amount input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  .stake-amount input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  .stake-amount input::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+.stake-amount .stake-amount-btn{
+    width: 60px;
+    height: 25px;
+    opacity: .5;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+}
+#unstake{
+    display: none;
+}
+.amount-details{
+    width: 100%;
+    max-width: 410px;
+    margin-top: 5px;
+}
+.amount-details .amount-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #fff;
+    margin-top: 17px;
+}
+.stake-approve{
+    padding: 20px 10px;
+}
+.stake-approve .stake-approve-btn{
+    align-self: center;
+    min-width: 163px!important;
+    max-width: 542px!important;
+    height: 43px!important;
+    width: 410px;
+    margin: 25px 0px 0px;
+    border-radius: 10px;
+    background: linear-gradient(to left, rgb(255, 139, 0), rgb(255, 218, 0));
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: rgb(255, 255, 255);
+    border: 0px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+.stake-b{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+.stake-b .stake-b-box{
+    width: 400px;
+    height: 85px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #D55E2D;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 32px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease 0s;
+}
+.stake-b .stake-b-box:hover{
+    transform: scale(1.03);
+    border: 1px solid rgb(255, 216, 0);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+}
+
+.stake-b .stake-b-box img{
+    height: 25px;
+    margin-right: 25px;
+}
+.stake-b .stake-b-box .stake-b-data .stake-b-data-text{
+    color: rgb(255, 255, 255);
+    margin-bottom: 9px;
+    font-family: Arial;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+}
+.stake-b .stake-b-box .ajax-data{
+    width: 150px;
+    height: 15px;
+    background: rgb(45 50 64);
+    animation: ajax-data infinite 2s linear;
+  }
+  @keyframes ajax-data {
+    0%{
+      opacity: 0;
+    }50%{
+      opacity: 1;
+    }100%{
+      opacity: 0;
+    }
+  }
+/* stake main content end   */

@@ -1,0 +1,617 @@
+/* Global fonts */
+@font-face {
+    font-family: tungstenBook;
+    src: url(../fonts/Tungsten-Book.otf);
+  }
+  @font-face {
+    font-family: tungstenLight;
+    src: url(../fonts/Tungsten-Light.otf);
+  }
+  /* @font-face {
+    font-family: tungsten;
+    src: url(../fonts/);
+  } */
+  /* @font-face {
+    font-family: tungstenBold;
+    src: url(/_next/static/media/Tungsten-Bold.6d93cd05b58f3d954bff524ec60555ff.otf);
+  } */
+  @font-face {
+    font-family: industryMedium;
+    src: url(../fonts/Industry-Medium.ttf);
+  }
+  @font-face {
+    font-family: graphik;
+    src: url(../fonts/Graphik-Regular.ttf);
+  }
+  @font-face {
+    font-family: graphikCompact;
+    src: url(../fonts/GraphikCompact-Regular.ttf);
+  }
+  /* @font-face {
+    font-family: graphikCompactLight;
+    src: url(/_next/static/media/GraphikCompact-Light.8244f69a1922d35fa05799002b7273b4.ttf);
+  } */
+  @font-face {
+    font-family: graphikCompactMedium;
+    src: url(../fonts/GraphikCompact-Medium.ttf);
+  }
+  @font-face {
+    font-family: graphikCompactBold;
+    src: url(../fonts/GraphikCompact-Bold.ttf);
+  }
+  /* @font-face {
+    font-family: sourceCodePro;
+    src: url(../fonts/);
+  } */
+
+
+
+
+/* Global css start  */
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui,sans-serif;
+    background: var(--black-8);
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --black-0: #211f26;
+  --black-1: #2d2b32;
+  --black-2: #201f27;
+  --black-3: #18171f;
+  --black-4: #111;
+  --black-5: #191820;
+  --black-6: #1e1d25;
+  --black-7: #1a1921;
+  --black-8: #1b1a22;
+  --black-9: #1e1d25;
+  --black-10: #222129;
+  --black-11: #2b2a32;
+  --black-12: #2f2d3d;
+  --black-13: grey;
+  --black-14: #222128;
+  --black-15: #333;
+  --gray-0: #57565c;
+  --gray-1: #404046;
+  --gray-2: #35343b;
+  --gray-3: #929296;
+  --red-0: #ff2900;
+  --red-1: #420509;
+  --gold-0: #ffbe4d;
+  --gold-1: #2e2514;
+  --gold-2: #d0a349;
+  --gold-3: #644f29;
+  --green-0: #172e14;
+  --green-1: #4dff70;
+}
+
+/* Global css end  */
+
+/* main start */
+.main-area{
+    height: 100vh;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    overflow-y: hidden;
+}
+.main-area::after{
+    background-image: radial-gradient(rgb(31, 30, 38) 2px, transparent 2px);
+    background-size: 60px 60px;
+    width: calc(100% - 2px);
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: "";
+    background-position: 0px 15px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* left sidebar start  */
+.left-sidebar{
+    width: 272px;
+    min-width: 272px;
+    max-width: 271px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -1px;
+    max-height: 100vh;
+    padding-bottom: 100px;
+    overflow-y: scroll;
+}
+.left-sidebar::-webkit-scrollbar {
+  display: none;
+}
+.header-logo{
+    height: 130px;
+    width: 100%;
+    position: relative;
+}
+.header-logo .Efked{
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 50px;
+  height: 54px;
+  z-index: 1000;
+}
+.header-logo .Efked button{
+    background: 0px center;
+    border: 0px;
+    cursor: pointer;
+}
+.header-logo .Efked button .fdsas{
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0px;
+}
+.header-logo .Efked button .fdsas img{
+  max-width: 100%;
+  display: block;
+  margin: 0px;
+  border: none;
+  padding: 0px;
+}
+.header-logo .efseF{
+  position: absolute;
+  top: 16px;
+  left: 32px;
+  z-index: 6;
+}
+.header-logo .efseF div{ 
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0px;
+}
+.header-logo .efseF div img{ 
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.left-sidebar .sidebar-menu{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: tungstenBook;
+  font-size: 28px;
+  position: relative;
+  margin-bottom: 40px;
+  z-index: 5;
+}
+.sidebar-menu .Active{
+
+}
+.SidenavItem{
+    cursor: pointer;
+    margin: 16px 0px 0px 20px;
+    transition: opacity 150ms ease-in-out 0s;
+    z-index: 5;
+}
+.SidenavItem .SidefullOp{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+.SidenavItem .SidefullOp aside{
+  opacity: 0.45;
+}
+.SANSO{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: auto;
+    max-height: 100%;
+    opacity: 1;
+}
+.SANSO > span{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.SidenavItem:hover * {
+  opacity: 0.9 !important;
+}
+.SidenaveLabel{
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 24px;
+}
+/* .tLesp{
+    --width: 500px;
+    --height: 1024px;
+    --x-offset: 80px;
+    --y-offset: -2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    height: var(--height);
+    width: var(--width);
+    position: absolute;
+    top: calc(var(--height) * -1 - var(--y-offset));
+    left: calc(var(--width) * -1 + var(--x-offset));
+    pointer-events: none;
+    background: var(--black-5);
+    z-index: -1;
+}
+.dLesp{
+    --width: 500px;
+    --height: 1024px;
+    --x-offset: 80px;
+    --y-offset: -2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    height: var(--height);
+    width: var(--width);
+    position: absolute;
+    left: calc(var(--width) * -1 + var(--x-offset));
+    bottom: calc(var(--height) * -1 - var(--y-offset));
+    pointer-events: none;
+    background: var(--black-5);
+    z-index: -1;
+}
+.SidenavActive{
+    overflow: hidden;
+    height: 86px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: -7px 0px;
+}
+.Sna2{
+    height: 72px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: nowrap;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    width: 100%;
+    overflow-y: visible;
+    z-index: 6;
+    margin-right: -1px;
+}
+.Sna3{
+    transform: translateX(0%) translateZ(0px);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: nowrap;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    width: 100%;
+    overflow-y: visible;
+    z-index: 6;
+}
+.Sna4{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.Sna4 div{
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+}
+.Sna4 div img{
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  height: 0px;
+  width: 0px;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.Sna5{
+  background-color: var(--black-5);
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--gray-1);
+  height: 72px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+.Sna5 .SidefullOp{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+}
+.Sna5 .SidefullOp aside{
+  position: relative;
+  left: -12px;
+  top: 1px;
+  z-index: 1;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.Sna5 .SidefullOp aside .SANSO{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: auto;
+    max-height: 100%;
+}
+.Sna5 .SidefullOp aside .SANSO > span{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.spanSna1{
+    z-index: 10;
+    height: 93px;
+}
+.spanSna2{
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0px;
+}
+.spanSna2 div{
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+}
+.spanSna2 div img{
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: none;
+} */
+/* left sidebar end  */
+
+/* main area start  */
+.Main_area{
+  -webkit-box-flex: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 20px 28px 0px 0px;
+    background: var(--black-5);
+    min-width: 0px;
+    z-index: 1;
+    border-radius: 40px 40px 0px 0px;
+}
+.Main_area .main_patern{
+  height: 100%;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    /* border-top-color: ;
+    border-top-style: ;
+    border-top-width: ;
+    border-right-color: ;
+    border-right-style: ;
+    border-right-width: ;
+    border-left-color: ;
+    border-left-style: ;
+    border-left-width: ;
+    border-image-source: ;
+    border-image-slice: ;
+    border-image-width: ;
+    border-image-outset: ;
+    border-image-repeat: ; */
+    z-index: 2;
+    padding: 0px;
+    border-bottom: 0px;
+    border-radius: 38px 38px 0px 0px;
+}
+.Main_sec{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.Main_sec .headerTabContainer{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background: var(--black-6);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.Main_sec .headerTabContainer::before{
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 101;
+  width: 80px;
+  height: 100%;
+  border-radius: 60px 0px 0px;
+  background: linear-gradient(
+90deg
+, rgb(30, 29, 37) 80%, rgba(30, 29, 37, 0) 100%);
+}
+.Main_sec .headerTabContainer::after{
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 101;
+  width: 40px;
+  height: 100%;
+  border-radius: 0px 60px 0px 0px;
+  background: linear-gradient(
+270deg
+, rgb(30, 29, 37) 40%, rgba(30, 29, 37, 0) 100%);
+}
+.headerTabContainer .cardCornerWrappers{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    pointer-events: none;
+}
+.headerTabContainer .cardCornerWrappers .styletabBG{
+  position: absolute;
+  background: transparent;
+  border-radius: 38px 38px 0px 0px;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+}
+.headerTabContainer .cardCornerWrappers .styletabBG .styles__HeaderFlairContainer{
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: -2.5px;
+  left: -2px;
+}
+.headerTabContainer .cardCornerWrappers .styletabBG .styles__HeaderFlairContainer2{
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  top: -2.5px;
+  right: -2px;
+  transform: scaleX(-1);
+}
+.headerTabContainer div{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  opacity: 1;
+}
+.headerTabContainer div .styles__StyledTabsContainer{
+  position: relative;
+  width: calc(100% - 10px);
+  height: 100%;
+}
+.headerTabContainer div .styles__StyledTabsContainer .styles__StyledTabs{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+.headerTabContainer div .styles__StyledTabsContainer .styles__StyledTabs .styles__StyledTab{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  font-family: industryMedium;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 21px;
+  min-width: 140px;
+  cursor: pointer;
+  outline: none;
+  padding: 0px 32px;
+}
+.headerTabContainer div .styles__StyledTabsContainer .styles__StyledTabs .styles__StyledTab p{
+    white-space: nowrap;
+    text-align: center;
+    opacity: 0.2;
+    color: white;
+    transition: all 150ms ease-in-out 0s;
+}
+.headerTabContainer div .styles__StyledTabsContainer .styles__StyledTabs .styles__StyledTab .tabBorder{
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 1px;
+  background: var(--black-1);
+  transition: all 150ms ease-in-out 0s;
+}
+.headerTabContainer div .styles__StyledTabsContainer .styles__StyledTabs .tabSelected p{
+  opacity: 1;
+}
+.headerTabContainer div .styles__StyledTabsContainer .styles__StyledTabs .tabSelected .tabBorder {
+    height: 5px;
+}
+.Main_sec .sdfse{
+  height: min-content;
+  width: 100%;
+  opacity: 1;
+}
+.Main_sec .sdfse .styles__InputContainer{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 38px;
+}
+/* main area end  */
+/* main end */

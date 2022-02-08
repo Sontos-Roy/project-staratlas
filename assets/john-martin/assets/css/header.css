@@ -1,0 +1,313 @@
+body, html {
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    /* background-image: linear-gradient(
+64deg
+,#1b1a1b,#2f3872 78%); */
+    background: rgb(249, 249, 249);
+    overflow: hidden;
+    overflow-y: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s;
+}
+
+/* navbar start  */
+.navbar-brand img{
+    height: 120px;
+    margin-left: -10px;
+    margin-top: -40px;
+}
+.nav-ani{
+  margin-top: 30px;
+}
+.nav-ani .nav-item .nav-link{
+  color: #2F5D8C;
+}
+.navbar-nav .nav-item .nav-link{
+    font-size: 13px;
+}
+.res-nav{
+  background: black;
+  border-radius: 5px;
+}
+.res-nav img{
+    width: 30px;
+}
+.res-nav2{
+  width: 30px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+.leftmenu{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.3137254901960784);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+.sidebar{
+    width: 275px;
+    transition: 0.5s;
+    height: 100vh;
+    background: rgb(21, 34, 80);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    animation-name: slikd;
+    animation-duration: 0.3s;
+    z-index: 9999;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 45px;
+    flex-direction: column;
+    padding-top: 50px;
+    overflow-y: scroll;
+    z-index: 9999;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+@keyframes slikd {
+  0%{
+    position: fixed;
+    top: 0px;
+    left: -275px;
+  }
+  100% {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+/* nav menu animation  */
+.nav-ani .nav-item .nav-link {
+    position: relative;
+  }
+  
+  .nav-ani .nav-item .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    bottom: -2px;
+    left: 30%;
+    background-color: #eee01e;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  
+  .nav-ani .nav-item .nav-link:hover:before,.nav-ani .nav-item .nav-link.active:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .sidebar .nav-item .nav-link {
+    position: relative;
+  }
+  
+  .sidebar .nav-item .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #eee01e;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+  }
+  
+  .sidebar .nav-item .nav-link:hover:before,.sidebar .nav-item .nav-link.active:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+/* navbar end  */
+
+/* right sidebar start  */
+.close2,.close{
+  font-size: 20px;
+  margin: 20px;
+}
+.close{
+  position: fixed;
+  top: 50px;
+  margin-left: 200px; 
+  margin-top: -30px;
+}
+.right-sidebar{
+  z-index: 9999;
+}
+.nested-right-sidebar{
+  height: 100vh;
+  min-height: 780px;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  background-color: rgb(21, 34, 80);
+  padding-bottom: 200px;
+  animation-name: example;
+  animation-duration: 1s;
+  width: 320px !important;
+  overflow-y: scroll;
+  z-index: 9999;
+}
+.nested-right-sidebar::-webkit-scrollbar {
+  display: none;
+}
+@keyframes example {
+  0%{
+    position: fixed;
+    right: -320px;
+    top: 0px;
+    
+  }
+  100% {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    
+  }
+}
+.right-sidebar-button{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 35px;
+  margin-right: 20px;
+}
+.r-s-b-l img{
+  height: 40px;
+}
+.r-s-b-r{
+  margin-left: 20px;
+  height: 40px;
+  width: 100%;
+  background: transparent;
+  border: rgb(180, 177, 177) 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 35px;
+  z-index: 9999;
+}
+.r-s-b-r:hover{
+  background: rgba(166, 224, 219, 0.281);
+  box-shadow: inset 1px 1px 17px 3px #ffffff38;
+  transition: 0.5s;
+}
+.r-s-b-r .dot{
+    width: 6px;
+    height: 6px;
+    margin: 6px 10px 4px 0px;
+    border-radius: 50%;
+    background-color: rgb(255, 205, 0);
+}
+.r-s-b-r .text{
+  color: rgb(212, 212, 212);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+}
+.backing-per-day{
+  margin-top: 70px;
+}
+.backing-per-day p{
+  font-size: 14px;
+  color: rgb(196, 195, 195);
+
+}
+.backing-per-day .pid{
+  margin: 0 auto;
+  width: 100px;
+  height: 15px;
+  background: rgb(14 27 72);
+  animation: pid infinite 2s linear;
+}
+@keyframes pid {
+  0%{
+    opacity: 0;
+  }50%{
+    opacity: 1;
+  }100%{
+    opacity: 0;
+  }
+}
+.dashboard-meter{
+  font-size: 14px;
+  color: rgb(196, 195, 195);
+}
+.dashboard-meter .dashboard-meter-full{
+  margin: 30px 20px;
+  text-align: center;
+  background: white;
+}
+.dashboard-meter img{
+  width: 100%;
+}
+.dashboard-meter .pid-stack{
+  margin-top: -80px !important;
+  margin-bottom: 20px !important;
+  margin: 0 auto;
+  width: 100px;
+  height: 15px;
+  background: rgb(14 27 72);
+  animation: pid infinite 2s linear;
+}
+.dashboard-meter .pancakeswap{
+  width: 200px;
+  height: 45px;
+  box-sizing: border-box;
+  color: rgb(255, 216, 0);
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  border: 1px solid rgb(255, 216, 0);
+  cursor: pointer;
+  text-decoration-line: none;
+}
+.dashboard-meter .pancakeswap:hover{
+  background: rgba(255, 216, 0, 0.063);
+  text-shadow: rgb(0 0 0) 0px 3px 3px;
+  transition: all 0.3s ease 0s;
+}
+.add-token{
+  font-size: 12px;
+}
+.dashboard-meter .pid-row div img{
+  width: 25px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: block;
+}
+.dashboard-meter .right-sidebar-bottom-menu{
+  margin-left: 40px;
+  margin-top: 50px;
+}
+.dashboard-meter .right-sidebar-bottom-menu .rsbm-menu{
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+}
+.dashboard-meter .right-sidebar-bottom-menu .rsbm-menu:hover{
+  color: #ffd800;
+  transition: 0.5s;
+}
+.dashboard-meter .right-sidebar-bottom-menu .rsbm-menu img{
+  width: 20px;
+  height: 20px;
+  margin-right: 13px;
+}
+/* right sidebar end  */
+

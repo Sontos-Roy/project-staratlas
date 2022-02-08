@@ -1,0 +1,25 @@
+/* borrowing feature start  */
+.borrowing-sub{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.borrowing-sub .borrowing-item{
+    width: 250px;
+    height: 400px;
+    background: #D55E2D;
+    border-radius: 10px;
+    transition: 0.3s;
+    transform: scale(1);
+    padding: 10px;
+}
+.borrowing-sub .borrowing-item h3{
+    font-weight: 900;
+}
+.borrowing-sub .borrowing-item:hover{
+    transform: scale(1.03);
+    border: 1px solid rgb(255, 216, 0);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+}
+/* borrowing feature end  */

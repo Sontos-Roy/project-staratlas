@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fair Trust | Bond</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+
+</head>
+<body>
+    <!-- navbar start  -->
+    <div class="col-lg-8 ms-5">
+      <nav class="navbar navbar-expand-lg text-dark mt-3">
+        <div class="container-fluid">
+            
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-ani me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-3">
+                <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="logo"></a>
+              </li>
+              <li class="nav-item ms-4 me-2">
+                <a class="nav-link" href="index.html">Dashboard</a>
+              </li>
+              <li class="nav-item ms-3 me-2">
+                <a class="nav-link" href="stake.html">Stake</a>
+              </li>
+              <li class="nav-item ms-3 me-2">
+                <a class="nav-link" href="#">3,3 π</a>
+              </li>
+              <li class="nav-item ms-3 me-2">
+                <a class="nav-link active" href="bond.html">Bond</a>
+              </li>
+              <li class="nav-item ms-3 me-2">
+                <a class="nav-link" href="#">Branchdao</a>
+              </li>
+              <li class="nav-item ms-3 me-2">
+                <a class="nav-link" href="#">TFT identity</a>
+              </li>
+              <li class="nav-item ms-3 me-2">
+                <a class="nav-link" href="borrowing-feature.html">Borrowing Feature</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+  </div>
+  <div class="">
+    <a href="#" onclick="openNav()" class="res-nav ms-5"><img src="assets/icons/menu.png" alt="icon"></a>
+    <a href="#" onclick="openNav2()" class="res-nav2 me-5 float-end"><i class="fas fa-tachometer-alt"></i></a>
+  </div>
+  <nav class="leftmenu" id="res-nav" >
+    
+      <ul class="sidebar navbar-nav col-lg-3 col-md-4 col-8">
+        <div class="close text-light" onclick="closeNav()"><i class="fas fa-window-close"></i></div>
+          <li class="nav-item m-3">
+            <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="logo"></a>
+          </li>
+          <li class="nav-item m-3">
+            <a class="nav-link text-light row" href="index.html"><span class="col-6"><i class="fas fa-chart-pie"></i></span> <span class="col-6">Dashboard</span></a>
+          </li>
+          <li class="nav-item m-3">
+            <a class="nav-link text-light row" href="stake.html"><span class="col-6"><i class="fas fa-sign-out-alt"></i></span><span class="col-6 ms-1">Stake</span></a>
+          </li>
+          <li class="nav-item m-3">
+              <a class="nav-link text-light row" href="#"><span class="col-6"><i class="fas fa-share-alt"></i></span><span class="col-6 ms-1">3,3 π</span></a>
+          </li>
+          <li class="nav-item m-3">
+              <a class="nav-link text-light row" href="bond.html"><span class="col-6"><i class="fas fa-tags"></i></span><span class="col-6">Bond</span></a>
+          </li>
+          <li class="nav-item m-3">
+              <a class="nav-link text-light row" href="#"><span class="col-6"><i class="fas fa-users"></i></span><span class="col-6">Branchdao</span></a>
+          </li>
+          <li class="nav-item m-3">
+              <a class="nav-link text-light row" href="#"><span class="col-6"><i class="fas fa-flag"></i></span><span class="col-6">TFT identity</span></a>
+          </li>
+          <li class="nav-item m-3">
+              <a class="nav-link text-light row" href="borrowing-feature.html"><span class="col-6"><i class="fas fa-flag"></i></span><span class="col-6">Borrowing Feature</span></a>
+          </li>
+        </ul>
+        <div class="sidebar-overlay" onclick="closeNav()"></div>
+  </nav>
+  <!-- navbar end  -->
+
+  <!-- right sidebar start  -->
+  <div class="right-sidebar" id="right-sidebar">
+    <div class="nested-right-sidebar">
+      <div class="close2 text-light" onclick="closeNav2()"><i class="fas fa-window-close"></i></div>
+      <div class="right-sidebar-button">
+        <div class="d-flex">
+          <a href="#" class="r-s-b-l"><img src="assets/images/certik.png" alt="certik"></a>
+          <button class="r-s-b-r d-flex" id="wallet">
+            <div class="dot"></div>
+            <div class="text">Wallet</div>
+          </button>
+        </div>
+      </div>
+      <div class="backing-per-day">
+        <p class="text-center">Backing Per TFT</p>
+        <div class="pid"></div>
+      </div>
+      <div class="dashboard-meter text-center">
+        <div class="dashboard-meter-full">
+          <img src="assets/images/meter.png" alt="meter">
+        </div>
+        <div class="pid-stake"></div>
+        <p class="text-center">TFT stake</p>
+        <button class="pancakeswap">Buy On PancakeSwap</button>
+        <p class="add-token pt-4 text-center">ADD TOKEN TO WALLET</p>
+        <div class="row justify-content-center pid-row">
+          <div class="col-4 text-center"><img src="assets/images/pid-icon.png" alt="icon">TFT</div>
+          <div class="col-4 text-center"><img src="assets/images/spid-icon.png" alt="icon">sTFT</div>
+        </div>
+        <div class="right-sidebar-bottom-menu">
+          <a href="#" class="rsbm-menu d-flex">
+            <img src="assets/images/user-icon.png" alt="user icon">
+            <p>Governence</p>
+          </a>
+          <a href="#" class="rsbm-menu d-flex">
+            <img src="assets/images/doc-icon.png" alt="user icon">
+            <p>Docs</p>
+          </a>
+          <a href="#" class="rsbm-menu d-flex">
+            <img src="assets/images/feedback-icon.png" alt="user icon">
+            <p>Feedback</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-overlay" onclick="closeNav2()"></div>
+  </div>
+  
+  <!-- right sidebar end  -->
+    <!-- bond main start  -->
+    <div class="col-lg-8 col-md-11 col-10 bond-main">
+      <div class="bond-content-header">
+        <div class="bond-content-title" id="bond-title-1">Bond (1, 1)</div>
+        <div class="bond-content-title" id="bond-title-2">Your Bonds (1,1)</div>
+        <div class="bond-content-switch">
+          <div class="bond" onclick="bond()">Bond</div>
+          <div class="mybond" onclick="mybond()">MyBond</div>
+          <div class="move-indicator movebond1" id="movebond1"></div>
+          <div class="move-indicator movebond2" id="movebond2"></div>
+        </div>
+      </div>
+      <div class="bond-a" id="bond-a">
+        <div class="bond-amount">
+          <div class="bond-amount-a">
+            <div class="iconBox">
+              <img src="assets/images/bar-icon.png" alt="icon">
+            </div>
+            <div class="amount-box">
+              <div class="amount-title">Treasury Balance</div>
+              <div class="amount-content">$0</div>
+            </div>
+          </div>
+          <div class="bond-amount-b">
+            <div class="iconBox">
+              <img src="assets/images/doller-icon.png" alt="icon">
+            </div>
+            <div class="amount-box">
+              <div class="amount-title">TFT Price</div>
+              <div class="amount-content">$0.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="dataContent">
+          <div class="dataTitleBox">
+            <div class="currencyIcon"></div>
+            <div class="minTit">Bond</div>
+            <div class="minTit">Price</div>
+            <div class="minTit">ROI</div>
+            <div class="minTit">Purchased</div>
+            <div class="BtnFelx"></div>
+          </div>
+          <div class="data-List">
+            <div class="currencyIcon">
+              <img src="assets/images/pairimg2.png" alt="icon">
+            </div>
+            <div class="minTit text-light">BUSD</div>
+            <div class="minTit">
+              <div class="data-price-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-roi-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-purchase-ajax"></div>
+              <div></div>
+            </div>
+            <div class="BtnFelx">
+              <a href="#"><button class="BtnClass">Bond</button></a>
+            </div>
+          </div>
+          <div class="data-List">
+            <div class="currencyIcon">
+              <img src="assets/images/pairimg3.png" alt="icon">
+            </div>
+            <div class="minTit text-light">USDT</div>
+            <div class="minTit">
+              <div class="data-price-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-roi-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-purchase-ajax"></div>
+              <div></div>
+            </div>
+            <div class="BtnFelx">
+              <a href="#"><button class="BtnClass">Bond</button></a>
+            </div>
+          </div>
+          <div class="data-List">
+            <div class="currencyIcon">
+              <div><img src="assets/images/pid-icon.png" alt="icon"></div>
+              <div><img src="assets/images/pairimg3.png" alt="icon"></div>
+            </div>
+            <div class="minTit text-light minTit2">
+              <div>TFT-USDT LP</div>
+              <a href="#">View Contract <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="minTit">
+              <div class="data-price-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-roi-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-purchase-ajax"></div>
+              <div></div>
+            </div>
+            <div class="BtnFelx">
+              <a href="#"><button class="BtnClass">Bond</button></a>
+            </div>
+          </div>
+          <div class="data-List">
+            <div class="currencyIcon">
+              <div><img src="assets/images/pid-icon.png" alt="icon"></div>
+              <div><img src="assets/images/pairimg2.png" alt="icon"></div>
+            </div>
+            <div class="minTit text-light minTit2">
+              <div>TFT-BUSD LP</div>
+              <a href="#">View Contract <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="minTit">
+              <div class="data-price-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-roi-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-purchase-ajax"></div>
+              <div></div>
+            </div>
+            <div class="BtnFelx">
+              <a href="#"><button class="BtnClass">Bond</button></a>
+            </div>
+          </div>
+          <div class="data-List">
+            <div class="currencyIcon">
+              <div><img src="assets/images/pid-icon.png" alt="icon"></div>
+              <div><img src="assets/images/pairimg4.png" alt="icon"></div>
+            </div>
+            <div class="minTit text-light minTit2">
+              <div>TFT-RUSD LP</div>
+              <a href="#">View Contract <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="minTit">
+              <div class="data-price-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-roi-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-purchase-ajax"></div>
+              <div></div>
+            </div>
+            <div class="BtnFelx">
+              <a href="#"><button class="BtnClass">Bond</button></a>
+            </div>
+          </div>
+          <div class="data-List">
+            <div class="currencyIcon">
+              <img src="assets/images/pairimg5.png" alt="icon">
+            </div>
+            <div class="minTit text-light">TUSD</div>
+            <div class="minTit">
+              <div class="data-price-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-roi-ajax"></div>
+              <div></div>
+            </div>
+            <div class="minTit">
+              <div class="data-purchase-ajax"></div>
+              <div></div>
+            </div>
+            <div class="BtnFelx">
+              <a href="#"><button class="BtnClass">Bond</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bond-b" id="bond-b">
+        <div class="dataContent">
+          <div class="dataTitleBox">
+            <div class="currencyIcon"></div>
+            <div class="minTit">Bond</div>
+            <div class="minTit">Price</div>
+            <div class="minTit">ROI</div>
+            <div class="minTit">Purchased</div>
+            <div class="BtnFelx"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bond main end  -->
+
+
+
+
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/main.js"></script>
+</body>
+</html>
