@@ -435,7 +435,7 @@ html, body{
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-    margin: 20px 28px 0px 0px;
+    margin: 20px 10px 0px 10px;
     background: var(--black-5);
     min-width: 0px;
     z-index: 1;
@@ -490,7 +490,7 @@ html, body{
   top: 0px;
   left: 0px;
   z-index: 101;
-  width: 80px;
+  width: 50px;
   height: 100%;
   border-radius: 60px 0px 0px;
   background: linear-gradient(
@@ -546,7 +546,6 @@ html, body{
 .headerTabContainer div{
   width: 100%;
   height: 100%;
-  overflow: hidden;
   position: relative;
   opacity: 1;
 }
@@ -626,8 +625,8 @@ html, body{
   align-items: center;
   height: 59px;
   max-width: 100%;
-  /* width: 100%; */
-  padding: 9px 9px 9px 0px;
+  width: 100%;
+  padding: 9px 9px 9px;
   background: rgb(34, 33, 40);
   border: 1px solid rgb(64, 64, 70);
   border-radius: 4px;
@@ -673,5 +672,230 @@ html, body{
     caret-color: rgb(255, 190, 77);
 }
 
+/* listing section start  */
+/* .Listing-section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px 10px;
+  height: 100%;
+  overflow: hidden;
+}
+.Listing-section div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 1;
+}
+.TabCardstyles__Container{
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.TabCardstyles__Container::before{
+  position: absolute;
+  display: block;
+  top: 27px;
+  right: -14px;
+  height: calc(100% - 13px);
+  width: 14px;
+  background-color: rgb(30, 29, 37);
+  content: "";
+}
+.TabCardstyles__Container::after{
+    position: absolute;
+    display: block;
+    top: 14px;
+    right: -14px;
+    height: 14px;
+    width: 14px;
+    background-image: url("../img/patern2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+}
+.TabCardstyles__Tab{
+  position: relative;
+  height: 14px;
+  max-width: 200px;
+  margin-left: 14px;
+  background-color: rgb(30, 29, 37);
+}
+.TabCardstyles__Tab::before{
+  position: absolute;
+    display: block;
+    top: 0px;
+    left: -14px;
+    height: 14px;
+    width: 14px;
+    background-image: url(../img/patern3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+}
+.TabCardstyles__Title{
+    position: absolute;
+    top: 12px;
+    left: 26px;
+    color: white;
+    font-family: tungstenBook;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    opacity: 0.15;
+    z-index: 6;
+}
+.TabCardstyles__Content{
+  padding: 0px 0px 14px;
+  background-color: rgb(30, 29, 37);
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0px 15px 0px 0px;
+}
+.TabCardstyles__Content div{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 1;
+}
+.TabCardstyles__Content div .styles__ItemTableWrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(214px, 1fr));
+  overflow: hidden auto;
+    max-height: 100%;
+    padding: 50px 24px;
+}
+.generic__ButtonWrapper{
+    padding: 0px 0px 64px;
+    background: none;
+    border: none;
+    width: 100%;
+    position: relative;
+    color: white;
+    transition: all 150ms ease-in-out 0s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.promoted__PromotedCellHeader{
+    width: 100%;
+    margin: 0px 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+.generic__ItemTypeSmall{
+  font-family: graphikCompact;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgb(87, 86, 92);
+  margin-bottom: 8px;
+}
+.poster__PosterCountLarge{
+  font-family: tungstenLight;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 105%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: rgb(255, 255, 255);
+}
+.generic__Spacer{
+    width: 100%;
+    display: block;
+    height: 16px;
+}
+.item__ItemCellBody{
+  display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.poster__PosterSmallItemCellBody{
+  height: 312px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    border-image: initial;
+    border-radius: 96px 96px 0px 0px;
+    border-bottom: hidden;
+    background-color: rgba(255, 255, 255, 0.01);
+    position: relative;
+}
+.sa-item-animate-hover-image{
+  transition: all 150ms ease-in-out 0s;
+  transform: translateY(0px);
+}
+.sa-item-animate-hover-image{
+    width: 160px;
+    height: 160px;
+    border-radius: 4px;
+    padding: 0px;
+    z-index: 1;
+    position: absolute;
+    top: 19px;
+    margin: 0px auto;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-image: initial;
+    border-bottom: none;
+    background-color: rgba(18, 17, 23, 0.25);
+}
+.poster__PosterSmallAvailableText{
+    font-family: graphik;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2.4px;
+    z-index: 4;
+    text-transform: uppercase;
+    margin: 0px 0px 4px;
+    padding: 0px;
+    color: var(--gray-3);
+}
+.poster__RewardLevelSmall{
+    font-family: graphikCompactMedium;
+    font-size: 9px;
+    letter-spacing: 1.62px;
+    text-transform: uppercase;
+    line-height: 9px;
+    margin: 6px 0px 14.5px;
+    padding: 4px 13px;
+    border-radius: 9px;
+    height: 19px;
+    z-index: 4;
+    border: 1px solid rgb(30, 29, 37);
+    color: rgb(30, 29, 37);
+    background: rgb(129, 254, 151);
+    font-weight: 900;
+    transform: scale(1);
+}
+.TabCardstyles__Content .TabCardstyles__Gradient{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    width: calc(100% - 8px);
+    height: 50px;
+    background: linear-gradient(
+0deg
+, rgba(30, 29, 37, 0) 0%, rgb(30, 29, 37) 75%) no-repeat border-box border-box transparent;
+    pointer-events: none;
+}
+listing section end  */
 /* main area end  */
 /* main end */
